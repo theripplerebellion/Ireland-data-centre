@@ -349,7 +349,19 @@
     margin-bottom: 10px;
   }
 
-  .ai-placeholder {
+  .ai-placeholder /* TEST BUTTON - ADD THIS */
+.test-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999;
+  font-weight: bold;
+}{
     background: #111828;
     border: 1px dashed #2a3080;
     border-radius: 6px;
@@ -806,5 +818,6 @@ renderNodes('all');
 <a id="exemption-pdf-1" href="#" class="placeholder-link">PDF placeholder 1</a>
 <a id="exemption-pdf-2" href="#" class="placeholder-link">PDF placeholder 2</a>
 <a id="acts-pdf-1" href="#" class="placeholder-link">Acts placeholder 1</a>
-</body> 
+<button class="test-btn" onclick="alert('JavaScript is working! Clickable!')">TEST RED BUTTON</button>
+<script>console.log('Page loaded with JS');</script></body> 
 </html>
