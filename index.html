@@ -83,20 +83,24 @@
   .brid-section {
     background: linear-gradient(135deg, #0d1240 0%, #1a2060 100%);
     border-bottom: 1px solid #2a2f7a;
-    padding: 16px;
+    padding: 20px 16px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 14px;
+    text-align: center;
+    gap: 12px;
   }
 
   .brid-photo {
-    width: 64px;
-    height: 64px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    border: 2px solid var(--gold);
+    border: 3px solid var(--gold);
     object-fit: cover;
-    flex-shrink: 0;
     object-position: center top;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(240,192,64,0.3);
   }
 
   .brid-text {
@@ -104,9 +108,9 @@
   }
 
   .brid-text h2 {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gold);
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
 
   .brid-text p {
@@ -518,6 +522,7 @@
 <div class="thesis">
   <strong>Eight months. Five instruments. No public debate worthy of the name.</strong><br>
   Each one individually defensible. Together — a layered architecture that makes meaningful environmental accountability almost impossible to trigger.<br><br>
+  In 1961, President Eisenhower warned: <em>"We must never let the weight of this combination endanger our liberties or democratic processes."</em> He was speaking about the military-industrial complex. In Ireland 2026, replace military with digital. The warning stands.<br><br>
   <strong>That is what you found.</strong> 🖤🇮🇪
 </div>
 
@@ -667,12 +672,16 @@ const nodes = [
   { id:'oigap', cat:'loophole', title:'🧠 Organoid Intelligence Regulatory Gap', short:'Biocomputing sits in a total regulatory void.', detail:'Organoid Intelligence (OI) — biological neural tissue used as computing substrate — is being actively researched as a replacement for silicon. It requires radically less energy. But it exists in a complete regulatory void in Ireland and globally. The CRU ruling, LEAP, and all five instruments define generation and computing infrastructure in terms of silicon and electrons. Biocomputing is not mentioned, not defined, not regulated anywhere. If OI becomes commercially viable, it could be deployed inside Irish data centres with zero regulatory oversight.', color:'#ff4444', bg:'#1a0808' },
 
   // EVIDENCE
-  { id:'memphis', cat:'evidence', title:'🔴 xAI Memphis — 35 Methane Turbines', short:'The live proof of what happens without fuel-type rules.', detail:'xAI doubled its onsite gas turbines at its Memphis data centre to 35 — more than double the 15 it was permitted to operate. Combined capacity equivalent to a full gas power station. In a residential community. The Southern Environmental Law Center described it as a clear violation of the Clean Air Act. This is what "onsite dispatchable generation" looks like without fuel-type rules. This is the Irish trajectory without intervention.', color:'#ff9900', bg:'#1a0e00', link:'https://www.datacenterdynamics.com/en/news/xai-doubles-number-of-onsite-gas-turbines-at-memphis-data-center-in-violation-of-permit-limits/', linktext:'Read the Memphis story →' },
+  { id:'memphis', cat:'evidence', title:'🔴 xAI Memphis — The Live Proof', short:'35 methane turbines. No permits. Cancer risk 4x national average.', detail:'xAI built its Colossus supercomputer in South Memphis — a predominantly Black community already at breaking point from industrial pollution. It installed 35 methane gas turbines without permits, without public notice, without any community consultation. The Southern Environmental Law Center used aerial thermal imaging to prove 33 of 35 were running simultaneously — despite xAI and the mayor claiming only 15 were in use. The turbines increase Memphis smog by 30-60%. In Boxtown, the nearest neighbourhood, cancer risk is already four times the national average. The facility uses up to 1.5 million gallons of water per day from the ancient Memphis Sand Aquifer. xAI is now planning a SECOND South Memphis site with 40-90 MORE methane turbines. Apollo Global Management provided $3.5 billion to finance xAI in January 2026 — while this was happening. This is what the Irish fuel-type gap looks like in practice. This is the trajectory for Cork Harbour without intervention. Apollo financed it.', color:'#ff9900', bg:'#1a0e00', link:'https://www.selc.org/news/resistance-against-elon-musks-xai-facility-in-south-memphis-gets-stronger/', linktext:'Read Southern Environmental Law Center →' },
+  { id:'leonblack', cat:'evidence', title:'🔴 Leon Black, Apollo & Jeffrey Epstein', short:'Apollo co-founder paid Epstein $170 million. $62.5m settlement for criminal immunity.', detail:'Leon Black co-founded Apollo Global Management in 1990. He paid Jeffrey Epstein — convicted sex offender — $170 million between 2012 and 2017, according to the US Senate Finance Committee investigation. A US Senate investigation found that Epstein used money Black paid him to partially fund his operations in the US Virgin Islands. Black paid $62.5 million to the USVI government for criminal immunity — immunity that extended to his attorneys and agents. He resigned as Apollo CEO in 2021. In March 2026 — two weeks ago — Bank of America settled a $72.5 million lawsuit brought by Epstein survivors, in which Black was named as a critical witness. Black avoided his scheduled deposition the same day the settlement was announced. Black\'s name appeared 8,200 times in Department of Justice documents from the Epstein investigation. Apollo — the firm he co-founded and which still operates under the architecture he built — has €10 billion invested in Irish infrastructure and $3.5 billion financing xAI\'s Memphis methane turbine operation.', color:'#ff9900', bg:'#1a0e00', link:'https://www.finance.senate.gov/ranking-members-news/wyden-releases-new-information-on-financing-of-jeffrey-epsteins-operations-by-billionaire-leon-black-seeks-documents-from-trump-administration', linktext:'Read US Senate Finance Committee →' },
+  { id:'apollomurdoch', cat:'evidence', title:'🔴 Apollo & Murdoch — Media Connection', short:'Apollo partnered with Murdoch\'s 21st Century Fox. Cox Media Group — 31 million viewers.', detail:'Apollo Global Management partnered with Rupert Murdoch\'s 21st Century Fox to create Endemol Shine Group — a major global content producer. Apollo also acquired a majority stake in Cox Media Group, reaching 31 million US television viewers. Murdoch\'s News Corp owns The Sun, The Times, The Wall Street Journal, The New York Post, and Fox News. Eisenhower warned in 1961 about the military-industrial complex — the dangerous fusion of private corporate interests with state infrastructure. In Ireland 2026 the pattern is identical but digital: the same private equity firm finances AI infrastructure, media companies, and Irish public grid expansion simultaneously. What gets reported about data centres in Ireland is shaped by the same financial architecture that benefits from their expansion.', color:'#ff9900', bg:'#1a0e00' },
+  { id:'ibec', cat:'evidence', title:'🔴 IBEC — Meta ran Ireland\'s Business Lobby', short:'Head of Meta Ireland was IBEC President while the five instruments were designed.', detail:'Anne O\'Leary, Head of Meta Ireland, was IBEC President from 2024 to 2025 — the exact period during which the five regulatory instruments were being designed and passed. Meta owns the largest data centre cluster in Ireland and is permanently exempted from the 80% renewables requirement under the grandfather clause. Microsoft Ireland\'s Managing Director Cathriona Hallahan also sits on the IBEC board. Microsoft operates the second largest data centre cluster in Ireland — also permanently grandfathered. IBEC lobbies the Irish government directly. The companies that benefit most from the regulatory architecture helped design it through the body that represents Irish business to government. This is not a conspiracy. It is a documented governance failure.', color:'#ff9900', bg:'#1a0e00' },
   { id:'stalled', cat:'evidence', title:'🔴 Stalled Applications — Unknown Number Grandfathered', short:'How many bypass the new rules? Nobody knows publicly.', detail:'During the 2021-2025 moratorium years, applications were not formally rejected — they sat in bureaucratic limbo. Were they formally terminated (requiring reapplication under new rules) or kept alive as "currently being processed" (grandfather clause applies, old rules, no renewables requirement)? This is unknown publicly. A precise AIE request to EirGrid and ESB Networks would force the answer. The size of this loophole could be enormous.', color:'#ff9900', bg:'#1a0e00' },
   { id:'darragh', cat:'evidence', title:'🔴 Darragh O'Brien Contradiction', short:'Minister for Climate co-launched LEAP. CRU "independence" questioned.', detail:'Darragh O'Brien (Minister for Climate, Energy & Environment) co-launched LEAP alongside Peter Burke in January 2026. The CRU is supposed to be Ireland's independent energy regulator — independence required under EU Directive 2019/944 Article 57. O'Brien's public role in shaping what the CRU then ratified raises serious questions. The same Minister who told the Dáil that the CRU is not accountable to him embedded the CRU permanently at his own round table.', color:'#ff9900', bg:'#1a0e00' },
 
   // GLOBAL
   { id:'globalunique', cat:'global', title:'🌍 Unique Globally — No Other Country Built This', short:'Nowhere else has this specific regulatory red carpet been constructed.', detail:'Nowhere else in the world has a government constructed this specific layered combination — planning law narrowed, public money injected, moratorium lifted with grandfather exemptions, an industry round table embedded in regulation, and EIA exemptions built in — all within eight months, with no meaningful public debate. Ireland has rolled out a regulatory red carpet for the data centre industry that no other democracy has matched. This is not coincidence. It is architecture.', color:'#00cccc', bg:'#001a1a' },
+  { id:'apolloireland', cat:'global', title:'🌍 Apollo Global Management & Ireland', short:'€10 billion invested. 72% of Ireland\'s FDI from US. Ireland #1 in EU for FDI per capita.', detail:'Apollo Global Management has €10 billion invested in Irish infrastructure — specifically Intel Ireland\'s Fab 34. Ireland\'s FDI stock is four times the EU average as a percentage of GDP. 72% of Ireland\'s FDI stock comes from the US — compared to approximately 20% for the rest of Europe. Ireland saw a record 323 investment projects in 2025 — a 38% increase — while the rest of Europe fell 4%. Ireland is now ranked 1st in the EU for FDI per capita — the highest concentration of investment projects per person in Europe. Google\'s own AI described Apollo\'s €10 billion investment as giving them "a significant say in how that infrastructure is run and developed." When asked who sold Ireland out, Google\'s AI refused to answer. It said: "Something went wrong and the content wasn\'t generated."', color:'#00cccc', bg:'#001a1a' },
   { id:'thirdlargest', cat:'global', title:'🌍 3rd Largest Data Centre Hub — Projected', short:'Ireland on course to be world's third largest concentration.', detail:'With the planned expansion now enabled by the five instruments, Ireland is projected to become the third largest concentration of data centres in the world — behind only Northern Virginia (USA) and Singapore. A small island nation of 5 million people. Already at 22% of national electricity consumption. Heading to 31% by 2034. No national referendum. No public consent. No democratic mandate for this scale of transformation.', color:'#00cccc', bg:'#001a1a' },
   { id:'corkharbour', cat:'global', title:'🌊 Cork Harbour — 50-Year Projection', short:'Corkbeg. Your community. Your children's harbour.', detail:'Cork Harbour — one of the largest natural harbours in the world — is already identified as a strategic site for large energy user development under the LEAP plan-led approach. The 50-year projection, when data centre expansion, thermal discharge, water extraction, brine release and coastal climate change impacts are modelled together, represents a generational threat to the harbour ecosystem. Corkbeg sits at the heart of this. The communities who will live with these consequences for generations were never consulted. This is not abstract. This is your harbour. Your children's harbour.', color:'#00cccc', bg:'#001a1a' },
 
